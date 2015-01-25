@@ -12,6 +12,7 @@ Original dataset was obtained in 'raw' form i.e. in following separate files:
 * subject_test.txt
 * X_test.txt
 * y_test.txt
+
 Each file was read and corresponding dataset was obtained.
 To gain the total dataset, first subject_train, x_train and y_train dataset were merged into one dataset. The same was done for test datasets.
 This createad train dataset and test dataset, which where then merged into total dataset.
@@ -26,6 +27,7 @@ For each observation in dataset it is provided:
 * An identifier of the subject who carried out the experiment.
 * Its activity label. 
 * A 66-feature vector with time and frequency domain variables. 
+
 #### Feature Selection 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
 Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
@@ -52,6 +54,7 @@ These signals were used to estimate variables of the feature vector for each pat
 * fBodyAccJerkMagnitude
 * fBodyGyroMagnitude
 * fBodyGyroJerkMagnitude
+
 The set of variables that were estimated from these signals are **MeanValue**: Mean Value and **StandardDeviation**: Standard Deviation.
 Features are normalized and bounded within [-1,1].
 
